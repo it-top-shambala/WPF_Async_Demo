@@ -1,0 +1,22 @@
+﻿<Window x:Class="WPF_Async_Demo.App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Async_Demo.App"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <StackPanel>
+            <Button Content="Start task 1"
+                    Click="ButtonStartTask1_OnClick"/>
+            <TextBlock x:Name="Task1Output"/>
+        </StackPanel>
+        
+        <StackPanel>
+            <Button Content="Start task 2"
+                    Click="ButtonStartTask2_OnClick"/>
+            <TextBlock x:Name="Task2Output"/>
+        </StackPanel>
+    </StackPanel>
+</Window>
