@@ -5,16 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_Async_Demo.App"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" 
+        Height="450" Width="800"
+        FontSize="25">
     <StackPanel>
         <StackPanel>
-            <Button Content="Start task 1"
+            <Button x:Name="ButtonStartTask1"
+                    Content="Start task 1"
                     Click="ButtonStartTask1_OnClick"/>
-            <TextBlock x:Name="Task1Output"/>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock x:Name="Task1Output"/>
+                <Button x:Name="ButtonStopTask1"
+                        Content="Stop!"
+                        IsEnabled="False" />
+            </StackPanel>
         </StackPanel>
         
         <StackPanel>
-            <Button Content="Start task 2"
+            <Button x:Name="ButtonStartTask2"
+                    Content="Start task 2"
                     Click="ButtonStartTask2_OnClick"/>
             <TextBlock x:Name="Task2Output"/>
         </StackPanel>
