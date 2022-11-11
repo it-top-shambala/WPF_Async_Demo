@@ -13,6 +13,8 @@
             <Button x:Name="ButtonStartTask1"
                     Content="Start task 1"
                     Click="ButtonStartTask1_OnClick"/>
+            <ProgressBar x:Name="ProgressTask1"
+                         Height="10"/>
             <StackPanel Orientation="Horizontal">
                 <TextBlock x:Name="Task1Output"/>
                 <Button x:Name="ButtonStopTask1"
